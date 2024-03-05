@@ -1,7 +1,15 @@
 /*********************FONT FACE DECLARATIONS*******************/
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: url('assets/fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+       url('assets/fonts/roboto-lightitalic-webfont.woff') format('woff');
+}
 
 @font-face {
   font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
   src: url('assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
        url('assets/fonts/roboto-regular-webfont.woff') format('woff');
@@ -9,17 +17,10 @@
 
 @font-face {
   font-family: 'Roboto';
+  font-style: normal;
   font-weight: 900;
   src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
        url('assets/fonts/roboto-black-webfont.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 300;
-  src: url('assets/fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
-       url('assets/fonts/roboto-lightitalic-webfont.woff') format('woff');
 }
 
 /**************************************************************/
@@ -31,7 +32,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 
 /* remove default spacing */
@@ -82,3 +83,57 @@ li {
 }
 
 /**************************************************************/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-bg-color {
+  background-color: #040046;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title {
+  padding: 1.5rem;
+  max-width: 1200px;
+}
+
+.main-and-footer-bg-color {
+  background-color: #092679;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  align-self: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.webpage-card {
+  min-width: 360px;
+  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-text {
+  padding: 1rem;
+}
