@@ -32,7 +32,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* remove default spacing */
@@ -89,7 +89,7 @@ body {
 }
 
 .header-bg-color {
-  background-color: #040046;
+  background-color: #032433;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +101,7 @@ body {
 }
 
 .main-and-footer-bg-color {
-  background-color: #092679;
+  background: linear-gradient( #032433, #074766, #0A6B99, #0E8ECC);
   display: flex;
   flex-direction: column;
 }
