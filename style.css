@@ -18,6 +18,14 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+       url('assets/fonts/roboto-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 900;
   src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
        url('assets/fonts/roboto-black-webfont.woff') format('woff');
@@ -86,10 +94,10 @@ li {
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: linear-gradient( #032433, #0E8ECC);
 }
 
-.header-bg-color {
-  background-color: #032433;
+.header-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +109,13 @@ body {
 }
 
 .main-and-footer-bg-color {
-  background: linear-gradient( #032433, #074766, #0A6B99, #0E8ECC);
+  /* background:
+    linear-gradient( 
+    #032433,
+    #074766,
+    #0A6B99,
+    #0E8ECC
+    ); */
   display: flex;
   flex-direction: column;
 }
