@@ -132,11 +132,10 @@ body {
   min-width: 360px;
   max-width: 360px;
   min-height: 270px;
-  max-height: 270px;
+  /* max-height: 270px; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 12px;
   flex-grow: 1;
   border-radius: 12px;
@@ -146,21 +145,29 @@ body {
   box-shadow: inset 0px 0px 15px 3px #0A6B99;
 }
 
+.webpage-card:hover {
+  box-shadow: inset 0px 0px 15px 3px #CCAA0E;
+}
+
 img {
-  max-width: 260px;
-  border-radius: 6px;  
-  border: 1px solid black;
+  max-width: 334px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 10px 1px #000;
 }
 
 .webpage-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
-  text-shadow: 0px 0px 7px #000;
+  color: #000;
+  text-shadow: 0px 1px 3px #FFF;
   width: 340px;
   text-align: center;
   padding: 0px 0px 12px 0px;
   border-bottom: 1px solid #000;
+}
+
+.view-webpage-button {
+  cursor: pointer;
 }
 
 .footer-container {
