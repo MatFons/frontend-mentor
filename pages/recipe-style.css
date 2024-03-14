@@ -1,0 +1,93 @@
+/*********************FONT FACE DECLARATIONS*******************/
+@font-face {
+  font-family: 'Young Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/youngserif-regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/youngserif-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/outfit-regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/outfit-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/outfit-semibold-webfont.woff2') format('woff2'),
+       url('../assets/fonts/outfit-semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/outfit-bold-webfont.woff2') format('woff2'),
+       url('../assets/fonts/outfit-bold-webfont.woff') format('woff');
+}
+
+/**************************************************************/
+
+/*************************CSS RESET****************************/
+
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: 2px solid red;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+/* improves punctuation in supported browsers */
+html {
+  /* color-scheme: dark light; */
+  hanging-punctuation: first last;
+}
+
+/* min body height */
+body {
+  min-height: 100svh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Improved heading in supported browsers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* improve readability with max-width on paragraphs and lists */
+/* prevent orphans in supported browsers */
+p,
+li {
+  max-width: var(--p-max-width, 65ch);
+  text-wrap: pretty;
+}
+
+/**************************************************************/
